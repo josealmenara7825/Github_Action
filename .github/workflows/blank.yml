@@ -58,3 +58,8 @@ jobs:
         run: |
           echo "El usuario es: ${{env.user}}"
           echo "La contraseña es: ${{env.password}}"
+
+    # Variable Abierta
+      - name: Variable Abierta
+        run: |
+          echo Imrpimir Variable Abierta: ${{ vars.Semana14}}

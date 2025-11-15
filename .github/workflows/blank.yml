@@ -62,4 +62,4 @@ jobs:
     # Variable Abierta
       - name: Variable Abierta
         run: |
-          echo Imrpimir Variable Abierta: ${{ vars.Semana14}}
+          echo Imrpimir Variable Abierta: ${{ vars.SEMANA_14}}

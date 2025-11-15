@@ -21,6 +21,8 @@ jobs:
       Region: "Peru"
       Cantidad: 12345
 
+      user: ${{secrets.USER}}
+      password: ${{secrets.PASSWORD}}
     # The type of runner that the job will run on
     runs-on: ubuntu-latest
 
@@ -51,3 +53,8 @@ jobs:
           echo "La region es: ${{env.Region}}"
           echo "La cantidad es: ${{env.Cantidad}}"
           
+    # Impresion de variables secretos
+      - name: Impresion de variables secretos
+        run: |
+          echo "El usuario es: ${{env.user}}"
+          echo "La contraseña es: ${{env.password}}"

@@ -23,7 +23,7 @@ jobs:
 
       user: ${{secrets.USER}}
       password: ${{secrets.PASSWORD}}
-      password2: ${{secrets.PASSWORD2}}
+      password_2: ${{secrets.PASSWORD_2}}
     # The type of runner that the job will run on
     runs-on: ubuntu-latest
 
@@ -59,7 +59,7 @@ jobs:
         run: |
           echo "El usuario es: ${{env.user}}"
           echo "La contraseña es: ${{env.password}}"
-          echo "La contraseña2 es: ${{env.password2}}"
+          echo "La contraseña2 es: ${{env.password_2}}"
 
     # Variable Abierta
       - name: Variable Abierta
